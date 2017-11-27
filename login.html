@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学生登录</title>
+        <!-- <link rel="stylesheet" href="http://homework.tellyouwhat.cn/ipd/css/normalize.css"> -->
+        <style media="screen">
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: Helvetica Neue,Helvetica,microsoft yahei,arial,STHeiTi,sans-serif;
+                background-color: #324157;
+            }
+            .title {
+                margin-top: 100px;
+                font-size: 30px;
+                text-align: center;
+                color: #fff;
+            }
+            .login {
+                width: 400px;
+                text-align: center;
+                margin: 30px auto;
+                background-color: #fff;
+                border-radius: 4px;
+            }
+            .login-box {
+                padding: 30px 50px 20px 50px;
+            }
+            input {
+                width: 100%;
+                height: 36px;
+                line-height: 36px;
+                border: solid 1px #d4d4d4;
+                border-radius: 5px;
+                outline: 0;
+                padding: 0 0 0 5px;
+                margin-top: 20px;
+                transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+
+            }
+            input:hover {
+                border: solid 1px #20a0ff;
+            }
+            .login-btn {
+                margin-top: 30px;
+                width: 250px;
+                height: 36px;
+                background-color: #20a0ff;
+                border: none;
+                border-radius: 4px;
+                color: #fff;
+            }
+            .tip {
+                visibility: hidden;
+                margin-top: 1px;
+                width: 100%;
+                height: 15px;
+                color: red;
+                font-size: 10px;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            学 生 登 录
+        </div>
+        <div class="login">
+            <form class="login-box" action="#" method="post" onsubmit="return check()">
+                <div class="">
+                    <input type="text" name="username" placeholder="用户名" id="username">
+                    <div class="tip" id="tip_1">请输入用户名</div>
+                </div>
+                <div class="">
+                    <input type="password" name="password"  placeholder="密码" autocomplete="off" id="password">
+                    <div class="tip" id="tip_2">请输入密码</div>
+                </div>
+                <div class="">
+                    <button type="submit" class="login-btn">登录</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function check() {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var tip_1 = document.getElementById('tip_1');
+                var tip_2 = document.getElementById('tip_2');
+                var flag = false;
+                if (username === '') {
+                    tip_1.style.visibility = 'visible';
+                    flag = true;
+                }
+                else {
+                    tip_1.style.visibility = 'hidden';
+                }
+                if (password === '') {
+                    tip_2.style.visibility = 'visible';
+                    flag = true;
+                }
+                else {
+                    tip_2.style.visibility = 'hidden';
+                }
+                return !flag;
+            }
+        </script>
+    </body>
+</html>
