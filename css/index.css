@@ -1,44 +1,53 @@
 @charset "utf-8";
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
 html {
-	background-color: #eee;
+    background-color: #eee;
     font-family: Microsoft Yahei, WenQuanYi Micro Hei, sans, serif;
 }
 
 /*===== S = 顶部 ===== */
-.top{
-	height: 90px;
-	line-height: 90px;
-	padding: 0 40px;
-	background-color: #f6f6f6;
+.top {
+    height: 90px;
+    line-height: 90px;
+    padding: 0 40px;
+    background-color: #f6f6f6;
 }
 
-.top h1{
-	float: left;
-	font-size: 32px;
+.top h1 {
+    float: left;
+    font-size: 32px;
 }
 
-.top nav{
-	float: right;
+.top nav {
+    float: right;
 }
 
-.top nav a{
-	text-decoration: none;
-	font-size: 24px;
-	color: #aaa;
+.top nav a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #aaa;
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+
+.top nav a:hover {
+    color: #333;
 }
 
 .top nav a + a {
-	margin-left: 20px;
+    margin-left: 20px;
 }
 
 /*===== E = 顶部 ===== */
@@ -46,52 +55,50 @@ html {
 /*===== S = 院系列表 ===== */
 
 .content {
-	box-sizing: border-box;
-	margin:0 auto;
-	padding: 10px 40px;
-	width:80%;
-	color: #555;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px 40px;
+    width: 80%;
+    color: #555;
 
 }
 
 .content ul li {
-	width: 40%;
-	height: 150px;
-	margin-bottom: 20px;
-	background-color: #fff;
-	padding: 0 20px;
-	box-shadow: 0 0.375rem 1.375rem rgba(175,194,201,.5);
-	box-sizing: border-box;
+    width: 40%;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 0 20px;
+    box-shadow: 0 0.375rem 1.375rem rgba(175, 194, 201, .5);
+    box-sizing: border-box;
 }
 
 .content ul li:nth-child(odd) {
-	float: left;
+    float: left;
 }
 
 .content ul li:nth-child(even) {
-	float: right;
+    float: right;
 }
 
 .content ul li h2 {
-	font-size: 20px;
-	height: 50px;
-	line-height: 50px;
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .content ul li div {
-	font-size: 14px;
+    font-size: 14px;
 
 }
 
-
-
 /*===== S = 院系列表 ===== */
 
-footer{
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	background-color: #fff;
-	font-size: 12px;
-	clear: both;
+footer {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+    font-size: 12px;
+    clear: both;
 }
