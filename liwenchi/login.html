@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学生登录</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div class="title">
+            学 生 登 录
+        </div>
+        <div class="content">
+            <form class="content-box" action="#" method="post" onsubmit="return check()">
+                <div class="">
+                    <input type="text" name="username" placeholder="用户名" id="username">
+                    <div class="tip" id="tip_1">请输入用户名</div>
+                </div>
+                <div class="">
+                    <input type="password" name="password"  placeholder="密码" autocomplete="off" id="password">
+                    <div class="tip" id="tip_2">请输入密码</div>
+                </div>
+                <div class="">
+                    <button type="submit" class="btn">登录</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function check() {
+                var username = document.getElementById('username').value
+                var password = document.getElementById('password').value
+                var tip_1 = document.getElementById('tip_1')
+                var tip_2 = document.getElementById('tip_2')
+                var flag = false
+                if (username == '') {
+                    tip_1.style.visibility = 'visible'
+                    flag = true
+                }
+                else {
+                    tip_1.style.visibility = 'hidden'
+                }
+                if (password == '') {
+                    tip_2.style.visibility = 'visible'
+                    flag = true
+                }
+                else {
+                    tip_2.style.visibility = 'hidden'
+                }
+                if(flag) return false
+                else return true
+            }
+        </script>
+    </body>
+</html>
