@@ -10,8 +10,9 @@ li {
 }
 
 body {
-    background-color: #eee;
-    font-family: Microsoft Yahei, WenQuanYi Micro Hei, sans, serif;
+    background-color: rgba(192, 192, 192, 0.7);
+    /*background-color: #eee;*/
+    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 /*===== S = 顶部 ===== */
@@ -31,7 +32,7 @@ body {
     position: absolute;
     left: 70px;
     font-size: 32px;
-    font-family: 宋体, SimSun-ExtB, serif;
+    font-family: font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
 }
 
 .top nav {
@@ -48,6 +49,7 @@ body {
     transition-duration: 0.3s;
     transition-timing-function: initial;
     transition-delay: initial;
+    font-family: "华文彩云";
 }
 
 .top nav a:hover {
@@ -79,7 +81,7 @@ body {
     height: 447px;
     margin: 0 35px 35px 0;
     float: left;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.8);
     box-shadow: 2px 2px 3px #ccc;
     box-sizing: border-box;
     overflow: hidden;
@@ -150,7 +152,7 @@ footer {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(255, 255,255, 0.1);
     font-size: 12px;
     clear: both;
 }
