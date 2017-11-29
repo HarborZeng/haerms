@@ -1,47 +1,46 @@
-@charset "utf-8";
-
 * {
     margin: 0;
     padding: 0;
-}
-
-li {
+    text-decoration: none;
     list-style: none;
 }
 
-body {
-    background-color: rgba(192, 192, 192, 0.7);
-    /*background-color: #eee;*/
-    font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+.clear {
+    clear: both;
 }
 
-/*===== S = 顶部 ===== */
+body {
+    background-color: #eee;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    min-width: 700px;
+}
+
+/* 顶部导航 */
 .top {
     width: 100%;
-    height: 90px;
     line-height: 90px;
-    padding: 0 40px;
-    top: 0;
-    left: 0;
-    background-color: #f4f7f6;
     position: fixed;
-    z-index: 998;
+    top: 0px;
+    background-color: #f4f7f6;
+    z-index: 1;
+    min-width: 850px;
 }
 
-.top h1 {
-    position: absolute;
-    left: 70px;
-    font-size: 32px;
-    font-family: font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif;
+.top .brand {
+    float: left;
 }
 
-.top nav {
-    position: absolute;
-    right: 170px;
+.top .brand a {
+    color: #000;
 }
 
-.top nav a {
-    text-decoration: none;
+.navbar a {
+    margin: 0px 10px;
+    float: right;
     font-size: 24px;
     color: #aaa;
     transition: all 0.3s;
@@ -49,62 +48,59 @@ body {
     transition-duration: 0.3s;
     transition-timing-function: initial;
     transition-delay: initial;
-    font-family: "华文彩云";
 }
 
-.top nav a:hover {
+.navbar a:hover {
     color: #333;
 }
 
-.top nav a + a {
-    margin-left: 20px;
-}
-
-/*===== E = 顶部 ===== */
-
-/*===== S = 院系列表 ===== */
-
+/* 中心内容 */
 .content {
-    max-width: 100%;
-    padding-left: 70px;
-    padding-right: 70px;
-    position: relative;
-    margin: 140px auto;
-    clear: both;
-    box-sizing: border-box;
-    color: #555;
-
+    margin-top: 100px;
 }
 
-.content ul li {
-    width: 30%;
-    height: 447px;
-    margin: 0 35px 35px 0;
+.row {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.block {
     float: left;
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 2px 2px 3px #ccc;
+    margin: 15px 20px;
+    width: 30%;
+    height: 400px;
     box-sizing: border-box;
-    overflow: hidden;
+    box-shadow: 7px 6px 10px 1px #959595;
+    background-color: #fff;
 }
 
-.content ul li .photo {
-    height: 322px;
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    background: #000;
-    text-align: center;
+.info {
+    position: absolute;
+    padding: 5px 20px;
 }
 
-.content ul li .photo img {
-    height: 322px;
+img {
+    width: 100%;
+    height: 100%;
     transition: all 1s ease-in-out;
 }
 
-.content ul li .photo a {
+.title {
+    margin: 10px 0;
+}
+
+.photo {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background: #000000;
+}
+
+.photo a {
     text-decoration: none;
     position: absolute;
-    display: block;
     opacity: 0;
     visibility: hidden;
     top: 50%;
@@ -117,42 +113,12 @@ body {
     transition: opacity 1s ease-in-out;
 }
 
-.content ul li .photo:hover img {
+.photo:hover img {
     transform: scale(1.1, 1.1);
     opacity: 0.5;
 }
 
-.content ul li .photo:hover a {
+.photo:hover a {
     opacity: 1;
     visibility: visible;
-}
-
-.content ul li:nth-child(3n) {
-    margin-right: 0;
-}
-
-.content ul li .info {
-    padding: 10px;
-}
-.content ul li .info h2 {
-    font-size: 20px;
-    height: 50px;
-    line-height: 50px;
-}
-
-.content ul li .info div {
-    font-size: 14px;
-    padding-top: 8px;
-
-}
-
-/*===== S = 院系列表 ===== */
-
-footer {
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    background-color: rgba(255, 255,255, 0.1);
-    font-size: 12px;
-    clear: both;
 }
