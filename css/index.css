@@ -122,3 +122,12 @@ img {
     opacity: 1;
     visibility: visible;
 }
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255, 255,255, 0.1);
+    font-size: 12px;
+    clear: both;
+}
