@@ -14,9 +14,8 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
-    min-width: 700px;
 }
 
 /* 顶部导航 */
@@ -32,15 +31,20 @@ body {
 
 .top .brand {
     float: left;
+    margin-left: 6%;
 }
 
 .top .brand a {
     color: #000;
 }
 
+.navbar {
+    float: right;
+    margin-right: 6%;
+}
+
 .navbar a {
     margin: 0px 10px;
-    float: right;
     font-size: 24px;
     color: #aaa;
     transition: all 0.3s;
@@ -127,7 +131,7 @@ footer {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    background-color: rgba(255, 255,255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     font-size: 12px;
     clear: both;
 }
