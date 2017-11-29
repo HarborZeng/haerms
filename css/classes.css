@@ -10,7 +10,7 @@ body {
 .sidebar {
     position: fixed;
     margin-left: 30px;
-    top: 90px;
+    top: 105px;
     float: left;
     overflow-x: hidden;
     overflow-y: auto;
@@ -32,6 +32,12 @@ body {
     border-radius: 2px;
     list-style: none;
     position: relative;
+    margin-top: 20px;
+}
+
+.image-item {
+    width: 100%;
+    height: 100%;
 }
 
 .list-class-item {
@@ -47,7 +53,7 @@ body {
 }
 
 .list-class-item:hover {
-    background: #c7c3c5;
+    background: #e8e3e6;
     transition: all 0.3s;
     transition-property: all;
     transition-duration: 0.3s;
@@ -70,9 +76,9 @@ body {
 }
 
 .selected-class-item,
-.selected-class-item a{
-    color: #20a0ff !important;
-    background: #dedede !important;
+.selected-class-item a {
+    color: #e3a24e !important;
+    background: #007cbc !important;
 }
 
 .main-content {
@@ -85,14 +91,14 @@ body {
 }
 
 .paragraphs {
-    padding: 20px 26px;
+    padding: 20px 18px;
     font-size: small;
 }
 
 .paragraphs p {
     margin-bottom: 15px;
     color: #4f4f4f;
-    text-indent:2em;
+    text-indent: 2em;
 }
 
 .paragraphs p:last-child {
@@ -127,14 +133,14 @@ body {
     color: #a07e46;
     font-size: 12px;
     line-height: 18px;
-    font-family: 'OpenSans',Arial,sans-serif;
+    font-family: 'OpenSans', Arial, sans-serif;
     margin-top: 2px;
 }
 
 .class-hour-table {
     border: 2px solid #ddd;
-    width: 100%;
-    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto;
     border-collapse: collapse;
     background-color: transparent;
 }
