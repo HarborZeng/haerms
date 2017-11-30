@@ -23,7 +23,7 @@ body {
     width: 100%;
     line-height: 90px;
     position: fixed;
-    top: 0px;
+    top: 0;
     background-color: #f4f7f6;
     z-index: 1;
     min-width: 850px;
@@ -44,7 +44,7 @@ body {
 }
 
 .navbar a {
-    margin: 0px 10px;
+    margin: 0 10px;
     font-size: 24px;
     color: #aaa;
     transition: all 0.3s;
@@ -63,26 +63,19 @@ body {
     margin-top: 100px;
 }
 
-.row {
-    margin: 20px 0;
-    width: 100%;
-}
-
 .block {
     float: left;
-    margin: 15px 20px;
-    width: 30%;
-    height: 400px;
-    min-width: 350px;
+    margin: 15px 2.5%;
+    width: 28%;
+    min-height: 100%;
+    height: 300px;
     box-sizing: border-box;
     box-shadow: 7px 6px 10px 1px #959595;
     background-color: #fff;
 }
 
 .info {
-    position: absolute;
     padding: 5px 20px;
-    min-width: 350px;
 }
 
 .photo img {
@@ -96,9 +89,6 @@ body {
 }
 
 .photo {
-    width: 100%;
-    height: 70%;
-    position: relative;
     cursor: pointer;
     overflow: hidden;
     background: #000000;
