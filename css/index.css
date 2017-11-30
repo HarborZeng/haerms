@@ -31,7 +31,7 @@ body {
 
 .top .brand {
     float: left;
-    margin-left: 6%;
+    margin-left: 20px;
 }
 
 .top .brand a {
@@ -40,7 +40,7 @@ body {
 
 .navbar {
     float: right;
-    margin-right: 6%;
+    margin-right: 20px;
 }
 
 .navbar a {
@@ -73,6 +73,7 @@ body {
     margin: 15px 20px;
     width: 30%;
     height: 400px;
+    min-width: 350px;
     box-sizing: border-box;
     box-shadow: 7px 6px 10px 1px #959595;
     background-color: #fff;
@@ -81,6 +82,7 @@ body {
 .info {
     position: absolute;
     padding: 5px 20px;
+    min-width: 350px;
 }
 
 .photo img {
