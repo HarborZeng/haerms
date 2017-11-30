@@ -21,6 +21,10 @@ body {
     border-radius: 2px;
 }
 
+.card h1, h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+}
+
 .list-class {
     box-sizing: border-box;
     padding: 15px 0;
@@ -220,4 +224,56 @@ body {
 .content-cell span {
     color: #464646;
     font-size: smaller;
+}
+
+.an-experiment {
+    margin-top: 30px;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.title-box {
+    padding: 20px 30px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.title-box img {
+    line-height: 60px;
+    padding-right: 6px;
+}
+
+.experiment-name {
+    color: #383838;
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.experiment-deadline {
+    color: #7f7f7f;
+    font-size: 12px;
+}
+
+.experiment-detail {
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.experiment-step p,
+.experiment-purpose p {
+    margin: 7px;
+    font-size: 12px;
+    text-indent: 2em;
+}
+
+.experiment-references span, a{
+    font-size: 14px;
+}
+
+.experiment-reference {
+    margin: 8px 0 5px 15px;
+
+}
+
+.experiment-detail {
+    display: none;
 }
