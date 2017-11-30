@@ -1,65 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-.clear {
-    clear: both;
-}
-
-body {
-    background-color: #eee;
-}
-
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    min-width: 700px;
-}
-
-/* 顶部导航 */
-.top {
-    width: 100%;
-    line-height: 90px;
-    position: fixed;
-    top: 0px;
-    background-color: #f4f7f6;
-    z-index: 1;
-    min-width: 850px;
-}
-
-.top .brand {
-    float: left;
-}
-
-.top .brand a {
-    color: #000;
-}
-
-.navbar a {
-    margin: 0px 10px;
-    float: right;
-    font-size: 24px;
-    color: #aaa;
-    transition: all 0.3s;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: initial;
-    transition-delay: initial;
-}
-
-.navbar a:hover {
-    color: #333;
-}
-
-/*===== E = 顶部 ===== */
-
-/*===== S = 院系列表 ===== */
-
 .content {
-    max-width: 100%;
     padding-left: 70px;
     padding-right: 70px;
     position: relative;
@@ -88,7 +27,8 @@ body {
 }*/
 
 .content_show {
-    width: 1300px;
+    width: 100%x;
+    min-width:1000px;
     overflow: hidden;
     padding: 30px 30px;
     margin: 25px 40px;
@@ -129,6 +69,9 @@ body {
 }
 
 .courses_info {
+    width:90%;
+    min-width:1000px;
+    position:relative;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
     margin: 0px 25px;
 }
