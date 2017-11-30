@@ -67,8 +67,8 @@ body {
     float: left;
     margin: 15px 2.5%;
     width: 28%;
-    min-height: 100%;
-    height: 300px;
+    min-height: 140%;
+    height: 350px;
     box-sizing: border-box;
     box-shadow: 7px 6px 10px 1px #959595;
     background-color: #fff;
@@ -89,6 +89,8 @@ body {
 }
 
 .photo {
+    width: 100%;
+    height: 60%;
     cursor: pointer;
     overflow: hidden;
     background: #000000;
@@ -96,7 +98,6 @@ body {
 
 .photo a {
     text-decoration: none;
-    position: absolute;
     opacity: 0;
     visibility: hidden;
     top: 50%;
