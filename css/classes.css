@@ -63,6 +63,7 @@ body {
     text-decoration: none;
     color: #444;
     padding: 15px 58% 15px 20%;
+    word-break: keep-all;
     cursor: default;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -72,7 +73,7 @@ body {
 
 .selected-class-item,
 .selected-class-item a {
-    color: #e3a24e !important;
+    color: #e7eee7 !important;
     background: #007cbc !important;
 }
 
@@ -149,4 +150,74 @@ body {
 
 .table-head {
     font-weight: 600;
+}
+
+.float-left {
+    float: left;
+}
+
+.table-filter-group {
+    padding: 14px;
+    margin-left: 14px;
+}
+
+.filter-div,
+.filter-button {
+    margin: 10px 10px;
+}
+
+.input-group input:hover {
+    border-color: #8391a5;
+}
+
+.input-group input:focus {
+    outline: 0;
+    border-color: #20a0ff;
+}
+
+.input-group input {
+    background: #fff none;
+    border-radius: 4px;
+    border: 1px solid #bfcbd9;
+    box-sizing: border-box;
+    color: #1f2d3d;
+    font-size: inherit;
+    height: 36px;
+    line-height: 1;
+    outline: 0;
+    padding: 3px 10px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+}
+
+.attachment-table {
+    border: 2px solid #ddd;
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+.clear {
+    clear: both;
+}
+
+.cell {
+    word-wrap: normal;
+    text-overflow: ellipsis;
+    line-height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.content-cell {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 15px;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+}
+
+.content-cell span {
+    color: #464646;
+    font-size: smaller;
 }
