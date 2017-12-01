@@ -281,24 +281,22 @@ body {
 .experiment-detail {
     display: none;
 }
-.experiment-uploadhomework{
-
+.experiment-uploadhomework {
 }
-
 .experiment-upload{
-    vertical-align: middle;
 }
 .experiment-homeworkfile {
-  vertical-align: middle;
-    /*padding: 4px 10px;*/
-    height: 20px;
+    /*padding-top: 30px;*/
+    vertical-align: middle;
+    padding: 4px 10px;
+    /*height: 15px;*/
     line-height: 20px;
     position: relative;
     cursor: pointer;
     color: #888;
     background: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    /*border: 1px solid #ddd;
+    border-radius: 4px;*/
     overflow: hidden;
     display: inline-block;
     *display: inline;
@@ -306,7 +304,7 @@ body {
 
 }
 
-.experiment-homeworkfile input {
+.experiment-homeworkfile  input {
     position: absolute;
     font-size: 100px;
     right: 0;

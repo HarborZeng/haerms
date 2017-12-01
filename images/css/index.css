@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 顶部导航 */
+.top {
+    width: 100%;
+    line-height: 90px;
+    position: fixed;
+    top: 0;
+    background-color: #f4f7f6;
+    z-index: 1;
+    min-width: 850px;
+}
+
+.top .brand {
+    float: left;
+    margin-left: 20px;
+}
+
+.top .brand a {
+    color: #000;
+}
+
+.navbar {
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #aaa;
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+
+.navbar a:hover {
+    color: #333;
+}
+
+/* 中心内容 */
+.content {
+    margin-top: 100px;
+}
+
+.block {
+    float: left;
+    margin: 15px 2.5%;
+    width: 300px;
+    min-width: 250px;
+    height: 340px;
+    min-height: 140%;
+    box-sizing: border-box;
+    box-shadow: 7px 6px 10px 1px #959595;
+    background-color: #fff;
+}
+
+.info {
+    padding: 5px 20px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.title {
+    margin: 10px 0;
+}
+
+.photo {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background: #000000;
+}
+
+.photo a {
+    text-decoration: none;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    top: 50%;
+    margin-top: -10px;
+    left: 50%;
+    margin-left: -50px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    transition: opacity 1s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.1, 1.1);
+    opacity: 0.5;
+}
+
+.photo:hover a {
+    opacity: 1;
+    visibility: visible;
+}
+
+footer {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 12px;
+    clear: both;
+}
