@@ -131,3 +131,28 @@ footer {
     font-size: 12px;
     clear: both;
 }
+
+.error-msg-body {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+
+.error-msg-body img {
+    /*margin-top: -40px;*/
+}
+
+.error-msg-title {
+    margin-top: 20px;
+    color: #ebebeb;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.error-msg-description {
+    margin-top: 10px;
+    color: #bdbdbd;
+    font-size: 18px;
+}
