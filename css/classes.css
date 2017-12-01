@@ -297,8 +297,8 @@ body {
     cursor: pointer;
     color: #888;
     background: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 4px;*/
     overflow: hidden;
     display: inline-block;
     *display: inline;
