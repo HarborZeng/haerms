@@ -34,8 +34,16 @@ body {
     margin-left: 20px;
 }
 
-.top .brand a {
+.brand img {
+    margin: 0 15px 0 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 180px;
+}
+
+.top .brand a, h1, img{
     color: #000;
+    float: left;
 }
 
 .navbar {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>课程作业 - HAERMS</title>
+    <link rel="shortcut icon" href="../favicon.png">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/classes.css">
     <link rel="stylesheet" href="../css/form-controls.css">
@@ -210,7 +211,8 @@
         if (img !== null) {
             img.src = flag ? '../images/up_arrow.svg' : '../images/down_arrow.svg';
         }
-        flag = !flag;
+        if (img !== null && experiment !== undefined)
+            flag = !flag;
     }
 </script>
 </body>

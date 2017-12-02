@@ -54,11 +54,11 @@
                         <span class="experiment-name" id="experiment-name-0">实验一：使用Wireshark操作TCP的三次握手</span>
                         <span class="experiment-deadline" id="experiment-deadline-0">截止时间：2017年12月21日</span>
                         <!-- 提交报告 -->
-                        <span class ="experiment-uploadhomework">
+                        <span class="experiment-uploadhomework">
                           <a href="javascript:;" class="experiment-homeworkfile btn">
                           <input type="file" name="" id="">点击这里上传报告</a>
-                          </a>
-                          <input type="submit" name="" value="提交报告" class="btn experiment-upload">
+                            </a>
+                            <input type="submit" name="" value="提交报告" class="btn experiment-upload">
                         </span>
                         <!-- 提交报告-->
                     </div>
@@ -130,11 +130,11 @@
                         <span class="experiment-name" id="experiment-name-1">实验一：使用Wireshark操作TCP的三次握手</span>
                         <span class="experiment-deadline" id="experiment-deadline-1">截止时间：2017年12月21日</span>
                         <!-- 提交报告 -->
-                        <span class ="experiment-uploadhomework">
+                        <span class="experiment-uploadhomework">
                           <a href="javascript:;" class="experiment-homeworkfile btn">
                           <input type="file" name="" id="">点击这里上传报告</a>
-                          </a>
-                          <input type="submit" name="" value="提交报告" class="btn experiment-upload">
+                            </a>
+                            <input type="submit" name="" value="提交报告" class="btn experiment-upload">
                         </span>
                         <!-- 提交报告-->
                     </div>
@@ -202,11 +202,11 @@
                         <span class="experiment-name" id="experiment-name-2">实验一：使用Wireshark操作TCP的三次握手</span>
                         <span class="experiment-deadline" id="experiment-deadline-2">截止时间：2017年12月21日</span>
                         <!-- 提交报告 -->
-                        <span class ="experiment-uploadhomework">
+                        <span class="experiment-uploadhomework">
                           <a href="javascript:;" class="experiment-homeworkfile btn">
                           <input type="file" name="" id="">点击这里上传报告</a>
-                          </a>
-                          <input type="submit" name="" value="提交报告" class="btn experiment-upload">
+                            </a>
+                            <input type="submit" name="" value="提交报告" class="btn experiment-upload">
                         </span>
                         <!-- 提交报告-->
                     </div>
@@ -274,11 +274,11 @@
                         <span class="experiment-name" id="experiment-name-3">实验一：使用Wireshark操作TCP的三次握手</span>
                         <span class="experiment-deadline" id="experiment-deadline-3">截止时间：2017年12月21日</span>
                         <!-- 提交报告 -->
-                        <span class ="experiment-uploadhomework">
+                        <span class="experiment-uploadhomework">
                           <a href="javascript:;" class="experiment-homeworkfile btn">
                           <input type="file" name="" id="">点击这里上传报告</a>
-                          </a>
-                          <input type="submit" name="" value="提交报告" class="btn experiment-upload">
+                            </a>
+                            <input type="submit" name="" value="提交报告" class="btn experiment-upload">
                         </span>
                         <!-- 提交报告-->
                     </div>
@@ -346,11 +346,11 @@
                         <span class="experiment-name" id="experiment-name-4">实验一：使用Wireshark操作TCP的三次握手</span>
                         <span class="experiment-deadline" id="experiment-deadline-4">截止时间：2017年12月21日</span>
                         <!-- 提交报告 -->
-                        <span class ="experiment-uploadhomework">
+                        <span class="experiment-uploadhomework">
                           <a href="javascript:;" class="experiment-homeworkfile btn">
                           <input type="file" name="" id="">点击这里上传报告</a>
-                          </a>
-                          <input type="submit" name="" value="提交报告" class="btn experiment-upload">
+                            </a>
+                            <input type="submit" name="" value="提交报告" class="btn experiment-upload">
                         </span>
                         <!-- 提交报告-->
                     </div>
@@ -441,7 +441,8 @@
         if (img !== null) {
             img.src = flag ? '../images/up_arrow.svg' : '../images/down_arrow.svg';
         }
-        flag = !flag;
+        if (img !== null && experiment !== undefined)
+            flag = !flag;
     }
 </script>
 </body>
