@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>课程作业 - HAERMS</title>
-    <link rel="shortcut icon" href="../favicon.png">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/classes.css">
-    <link rel="stylesheet" href="../css/form-controls.css">
+    <link rel="shortcut icon" href="../../../favicon.png">
+    <link rel="stylesheet" href="../../style/css/index.css">
+    <link rel="stylesheet" href="../../style/css/classes.css">
+    <link rel="stylesheet" href="../../style/css/form-controls.css">
 </head>
 <body>
 <div class="top">
@@ -27,7 +27,7 @@
 <div class="">
     <nav class="sidebar">
         <div class="card">
-            <img src="../images/course-main_image.png" class="image-item"/>
+            <img src="../../style/images/course-main_image.png" class="image-item"/>
         </div>
         <ul class="list-class card">
             <li class="list-class-item">
@@ -51,7 +51,7 @@
             <div class="experiments" onclick="expandOrCollapse(event)">
                 <div class="an-experiment">
                     <div class="title-box" id="title-box-0">
-                        <img src="../images/down_arrow.svg" id="img-0">
+                        <img src="../../style/images/down_arrow.svg" id="img-0">
                         <span class="experiment-name" id="experiment-name-0">作业一：用JavaScript编写面向对象风格的画板</span>
                         <span class="experiment-deadline" id="experiment-deadline-0">截止时间：2017年12月21日</span>
                         <!-- 提交作业 -->
@@ -73,7 +73,7 @@
                 </div>
                 <div class="an-experiment">
                     <div class="title-box" id="title-box-1">
-                        <img src="../images/down_arrow.svg" id="img-1">
+                        <img src="../../style/images/down_arrow.svg" id="img-1">
                         <span class="experiment-name" id="experiment-name-1">作业一：用JavaScript编写面向对象风格的画板</span>
                         <span class="experiment-deadline" id="experiment-deadline-1">截止时间：2017年12月21日</span>
                         <!-- 提交作业 -->
@@ -95,7 +95,7 @@
                 </div>
                 <div class="an-experiment">
                     <div class="title-box" id="title-box-2">
-                        <img src="../images/down_arrow.svg" id="img-2">
+                        <img src="../../style/images/down_arrow.svg" id="img-2">
                         <span class="experiment-name" id="experiment-name-2">作业一：用JavaScript编写面向对象风格的画板</span>
                         <span class="experiment-deadline" id="experiment-deadline-2">截止时间：2017年12月21日</span>
                         <!-- 提交作业 -->
@@ -117,7 +117,7 @@
                 </div>
                 <div class="an-experiment">
                     <div class="title-box" id="title-box-3">
-                        <img src="../images/down_arrow.svg" id="img-3">
+                        <img src="../../style/images/down_arrow.svg" id="img-3">
                         <span class="experiment-name" id="experiment-name-3">作业一：用JavaScript编写面向对象风格的画板</span>
                         <span class="experiment-deadline" id="experiment-deadline-3">截止时间：2017年12月21日</span>
                         <!-- 提交作业 -->
@@ -139,7 +139,7 @@
                 </div>
                 <div class="an-experiment">
                     <div class="title-box" id="title-box-4">
-                        <img src="../images/down_arrow.svg" id="img-4">
+                        <img src="../../style/images/down_arrow.svg" id="img-4">
                         <span class="experiment-name" id="experiment-name-4">作业4：用JavaScript编写面向对象风格的画板</span>
                         <span class="experiment-deadline" id="experiment-deadline-4">截止时间：2017年12月21日</span>
                         <!-- 提交作业 -->
@@ -161,7 +161,7 @@
                 </div>
                 <div class="an-experiment">
                     <div class="title-box" id="title-box-5">
-                        <img src="../images/down_arrow.svg" id="img-5">
+                        <img src="../../style/images/down_arrow.svg" id="img-5">
                         <span class="experiment-name" id="experiment-name-5">作业6：用JavaScript编写面向对象风格的画板</span>
                         <span class="experiment-deadline" id="experiment-deadline-5">截止时间：2017年12月21日</span>
                         <!-- 提交作业 -->
@@ -209,7 +209,7 @@
         var img = document.getElementById('img-' + parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
             event.target.id.length)));
         if (img !== null) {
-            img.src = flag ? '../images/up_arrow.svg' : '../images/down_arrow.svg';
+            img.src = flag ? '../../style/images/up_arrow.svg' : '../../style/images/down_arrow.svg';
         }
         if (img !== null && experiment !== undefined)
             flag = !flag;
