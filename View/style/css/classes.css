@@ -27,11 +27,11 @@ body {
 
 .list-class {
     box-sizing: border-box;
-    padding: 15px 0;
+    padding: 0;
     border-radius: 2px;
     list-style: none;
     position: relative;
-    margin-top: 20px;
+    margin-top: 220px;
 }
 
 .image-item {
@@ -245,6 +245,7 @@ body {
 .title-box img {
     line-height: 60px;
     padding-right: 6px;
+    float: none;
 }
 
 .experiment-name {
