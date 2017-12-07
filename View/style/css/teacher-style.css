@@ -1,3 +1,5 @@
+/*大伙儿都可以把css写在这里*/
+
 .create-class-main-container {
     width: 70%;
 }
@@ -7,9 +9,22 @@
     font-weight: bold;
 }
 
+.create-course-h4 {
+    font-size: large;
+    font-weight: bold;
+}
+.create-course-h5 {
+    font-size: small;
+    font-weight: bold;
+}
+
 .table-top-form {
-    margin-bottom: -30px;
+    /*margin-bottom: -30px;*/
     margin-top: 18px;
     margin-left: 10px;
     padding-left: 35px;
+}
+
+.main-content textarea {
+    width: 85%;
 }

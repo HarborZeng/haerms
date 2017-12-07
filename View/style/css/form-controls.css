@@ -122,3 +122,14 @@ xmp {
     color: white;
     font-size: 20px;
 }
+
+.input-style {
+    border: solid 1px #d4d4d4;
+    border-radius: 5px;
+    outline: 0;
+    padding: 5px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+}
+.input-style:hover {
+    border: solid 1px #20a0ff;
+}

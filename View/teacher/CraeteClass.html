@@ -25,18 +25,18 @@
 
 <div class="main-container create-class-main-container">
     <div class="main-content card">
-        <h2><input title="课程名称" placeholder="课程名称" class="create-course-h2"></h2>
+        <h2><input title="课程名称" placeholder="课程名称" class="create-course-h2  input-style"></h2>
         <h5 class="teacher">陈晓江/肖云</h5>
         <hr>
         <div class="paragraphs">
-            <textarea title="课程简介" placeholder="课程简介" rows="8" cols="70"></textarea>
+            <textarea title="课程简介" placeholder="课程简介" rows="8" class="input-style"></textarea>
         </div>
     </div>
     <div class="main-content card">
         <h2>课程概述</h2>
         <hr>
         <div class="paragraphs">
-            <textarea title="课程简介" placeholder="课程简介" rows="14" cols="90"></textarea>
+            <textarea title="课程简介" placeholder="课程简介" rows="14" class="input-style"></textarea>
         </div>
     </div>
 
@@ -47,17 +47,17 @@
             <tr>
                 <td class="table-head">开课时间</td>
                 <td>
-                    <input title="开始时间" type="date">
+                    <input title="开始时间" type="date" class="input-style">
                     -
-                    <input title="结束时间" type="date">
+                    <input title="结束时间" type="date" class="input-style">
                 </td>
             </tr>
             <tr>
                 <td class="table-head">课时安排</td>
                 <td>
-                    理论<input title="理论课时" type="number">课时
+                    理论<input title="理论课时" type="number" class="input-style">课时
                     +
-                    实验<input title="实验课时" type="number" aria-valuemax="100">课时
+                    实验<input title="实验课时" type="number" class="input-style">课时
                 </td>
             </tr>
         </table>
@@ -78,7 +78,7 @@
             <tr>
                 <td>
                     <div class="content-cell">
-                        <select title="章节">
+                        <select title="章节" class="input-style">
                             <option>一</option>
                             <option>二</option>
                             <option>三</option>
@@ -104,12 +104,12 @@
                 </td>
                 <td>
                     <div class="content-cell">
-                        <input type="text" title="课件名称" placeholder="在这里输入课件名称">
+                        <input type="text" title="课件名称" placeholder="在这里输入课件名称" class="input-style">
                     </div>
                 </td>
                 <td>
                     <div class="content-cell">
-                        <input type="file" class="btn btn-danger">
+                        <input type="file" class="btn btn-danger input-style" >
                         <button class="btn btn-primary">上传</button>
                     </div>
                 </td>
@@ -118,73 +118,49 @@
     </div>
 
     <div class="main-content card">
-        <h2>课程实验列表</h2>
+        <h2>课程实验</h2>
         <hr>
-        <div class="experiments" onclick="expandOrCollapse(event)">
+        <div class="table-top-form">
+            <button class="btn btn-warning">添加</button>
+        </div>
+        <div class="experiments " onclick="expandOrCollapse(event)">
             <div class="an-experiment">
                 <div class="title-box" id="title-box-0">
                     <img src="../style/images/down_arrow.svg" id="img-0">
-                    <span class="experiment-name" id="experiment-name-0">实验一：使用Wireshark操作TCP的三次握手</span>
-                    <span class="experiment-deadline" id="experiment-deadline-0">截止时间：2017年12月21日</span>
+                    <span class="experiment-name" id="experiment-name-0">
+                        <input title="实验名称" placeholder="实验名称" class="create-course-h4 input-style">
+                    </span>
+                    <span class="experiment-deadline" id="experiment-deadline-0">
+                        截止时间：
+                        <input title="作业截止时间" type="date" class="input-style">
+                    </span>
                 </div>
                 <div class="experiment-detail">
                     <div class="experiment-purpose">
                         <h4>实验目的：</h4>
                         <hr>
-                        <p>1. 了解Tcp的数据组成部分</p>
-                        <p>2. 理解Tcp三次握手的基本原理</p>
-                        <p>3. 用Wireshark抓包来进一步理解Tcp的三次握手原理</p>
+                        <p><textarea title="实验目的" rows="5" class="input-style"></textarea></p>
                     </div>
                     <div class="experiment-steps">
                         <h4>实验步骤：</h4>
                         <hr>
                         <div class="experiment-step">
-                            <h5>1. Tcp的数据组成部分，并结合抓包数据进行分析对应。</h5>
-                            <p>源端口和目的端口字段——各占2字节。端口是传输层与应用层的服务接口。传输层的复用和分用功能都要通过端口才能实现。</p>
-                            <p>序号字段——占4字节。TCP连接中传送的数据流中的每一个字节都编上一个序号。序号字段的值则指的是本报文段所发送的数据的第一个字节的序号。</p>
-                            <p>
-                                确认号字段——占4字节，是期望收到对方的下一个报文段的数据的第一个字节的序号。它和IP数据包头部一样，也有个Options字段，长度是不固定的，而为了要确认整个TCP封包大小，就需要这个标志来说明整个封包区段的起始位置。</p>
-                            <p>数据偏移——占4bit，它指出TCP报文段的数据起始处距离 CP报文段的起始处有多远。“数据偏移”的单位不是字节而是32bit字（4字节为计算单位）。</p>
+                            <h5><input title="步骤1" type="text" class="create-course-h5 input-style" placeholder="步骤标题"></h5>
+                            <p><textarea title="步骤1内容" rows="5" placeholder="该步骤详细内容" class="input-style"></textarea></p>
                         </div>
-                        <div class="experiment-step">
-                            <h5>2.三次握手的过程</h5>
-                            <p>第一次握手：建立连接时，客户端发送syn包(syn=j)到服务器，并进入SYN_SEND状态，等待服务器确认；</p>
-                            <p>
-                                第二次握手：服务器收到syn包，必须确认客户的SYN（ack=j+1），同时自己也发送一个SYN包（syn=k），即SYN+ACK包，此时服务器进入SYN_RECV状态；</p>
-                            <p>
-                                第三次握手：客户端收到服务器的SYN＋ACK包，向服务器发送确认包ACK(ack=k+1)，此包发送完毕，客户端和服务器进入ESTABLISHED状态，完成三次握手。</p>
-                            <p>完成三次握手，客户端与服务器开始传送数据。</p>
+                        <div class="table-top-form">
+                            <button class="btn btn-warning">添加步骤</button>
                         </div>
-                        <div class="experiment-step">
-                            <h5>3. 分析每一次的握手过程：</h5>
-                            <p>在第一次握手中：Seq=0， Ack=1，Win=14600 Len=0 MSS=1488 SACK_PERM=1;</p>
-                            <p>在第二次握手中：Seq=1，ACK=466,Win=15744,Len=0;</p>
-                            <p>在第三次握手中：Seq=466，ACK=7241,Win=261848,Len=0;</p>
-                        </div>
-
                     </div>
                     <div class="experiment-references">
                         <h4>参考资料：</h4>
                         <hr>
                         <div class="experiment-reference">
-                            <span>w3school: </span><a
-                                href="http://www.w3school.com.cn">http://www.w3school.com.cn</a><br>
+                            <span><input title="资料" placeholder="资料名称" class="input-style"> </span>
+                            <input title="URL" placeholder="URL" class="input-style"><br>
                         </div>
-                        <div class="experiment-reference">
-                            <span>w3school: </span><a
-                                href="http://www.w3school.com.cn">http://www.w3school.com.cn</a><br>
-                        </div>
-                        <div class="experiment-reference">
-                            <span>w3school: </span><a
-                                href="http://www.w3school.com.cn">http://www.w3school.com.cn</a><br>
-                        </div>
-                        <div class="experiment-reference">
-                            <span>w3school: </span><a
-                                href="http://www.w3school.com.cn">http://www.w3school.com.cn</a><br>
-                        </div>
-                        <div class="experiment-reference">
-                            <span>附FDP: </span><a
-                                href="http://www.w3school.com.cn/a.pdf">http://www.w3school.com.cn/a.pdf</a><br>
+                        <div class="table-top-form">
+                            <button class="btn btn-warning">添加参考资料</button>
                         </div>
                     </div>
                 </div>
@@ -193,9 +169,27 @@
     </div>
 </div>
 
-
 <footer>
     Copyright &copy; All Rights Reserved &nbsp;2017
 </footer>
+<script>
+    var flag = true;
+
+    function expandOrCollapse(event) {
+        var experiment = document.getElementsByClassName('experiment-detail')[
+            parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
+                event.target.id.length))];
+        if (experiment !== undefined) {
+            experiment.style.display = flag ? 'block' : 'none';
+        }
+        var img = document.getElementById('img-' + parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
+            event.target.id.length)));
+        if (img !== null) {
+            img.src = flag ? '../style/images/up_arrow.svg' : '../style/images/down_arrow.svg';
+        }
+        if (img !== null && experiment !== undefined)
+            flag = !flag;
+    }
+</script>
 </body>
 </html>
