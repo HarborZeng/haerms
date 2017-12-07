@@ -47,17 +47,17 @@
             <tr>
                 <td class="table-head">开课时间</td>
                 <td>
-                    <input title="开始时间" type="date" class="input-style">
+                    <input title="开始时间" type="date" class="input-style" min="2017-09-01" max="2099-12-31">
                     -
-                    <input title="结束时间" type="date" class="input-style">
+                    <input title="结束时间" type="date" class="input-style" min="2017-09-01" max="2099-12-31">
                 </td>
             </tr>
             <tr>
                 <td class="table-head">课时安排</td>
                 <td>
-                    理论<input title="理论课时" type="number" class="input-style">课时
+                    理论<input title="理论课时" type="number" class="input-style" min="1" max="300">课时
                     +
-                    实验<input title="实验课时" type="number" class="input-style">课时
+                    实验<input title="实验课时" type="number" class="input-style" min="1" max="300">课时
                 </td>
             </tr>
         </table>
