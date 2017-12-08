@@ -226,7 +226,8 @@ body {
     font-size: smaller;
 }
 
-.an-experiment {
+.an-experiment,
+.an-homework {
     margin-top: 15px;
     margin-bottom: 20px;
     border-bottom: 1px solid #f8f8f8;
