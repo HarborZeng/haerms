@@ -249,12 +249,14 @@ body {
     float: none;
 }
 
+.homework-name,
 .experiment-name {
     color: #383838;
     margin-right: 20px;
     font-size: 14px;
 }
 
+.homework-deadline,
 .experiment-deadline {
     color: #7f7f7f;
     font-size: 12px;
@@ -267,13 +269,14 @@ body {
 }
 
 .experiment-step p,
+.homework-purpose p,
 .experiment-purpose p {
     margin: 7px;
     font-size: 12px;
     text-indent: 2em;
 }
 
-.experiment-references span a{
+.experiment-references span a {
     font-size: 14px;
 }
 
@@ -285,15 +288,17 @@ body {
 .experiment-detail {
     display: none;
 }
-.experiment-uploadhomework{
+
+.experiment-uploadhomework {
 
 }
 
-.experiment-upload{
+.experiment-upload {
     vertical-align: middle;
 }
+
 .experiment-homeworkfile {
-  vertical-align: middle;
+    vertical-align: middle;
     /*padding: 4px 10px;*/
     height: 20px;
     line-height: 20px;
