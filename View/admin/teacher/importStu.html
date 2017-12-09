@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="../../style/css/form.css">
+        <link rel="stylesheet" href="../../style/css/index.css">
+        <link rel="stylesheet" href="../../style/css/importstu.css">
+        <script type="text/javascript" src="../../js/importstu.js"></script>
+    </head>
+    <body>
+        <div class="top">
+            <div class="container">
+                <div class="brand">
+                    <a href="index.html"><img src="../../style/images/logo.png"></a>
+                    <h1><a href="index.html">作业与实验报告管理系统</a></h1>
+                </div>
+                <div class="navbar">
+                    <a href="#">登录</a>
+                    <a href="#">注销</a>
+                    <a href="#">修改密码</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="block2">
+                    <form class="" action="#" method="post" onsubmit="return checknulldata()">
+                        <table border="1">
+                            <tbody id="stutable">
+                                <tr id="table_head">
+                                    <th>姓名</th>
+                                    <th>学号</th>
+                                    <th>班级</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="controltable">
+                            <button type="button" name="button" class="btn btn-primary" onclick="createnewrow()">创建新行</button>
+                            <button type="button" name="button" class="btn btn-danger" onclick="deleteblankrow()">删除空行</button>
+                            <button type="submit" class="btn btn-success">提交信息</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
