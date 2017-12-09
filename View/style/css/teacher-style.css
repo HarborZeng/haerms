@@ -1,7 +1,10 @@
 /*大伙儿都可以把css写在这里*/
 
 .create-class-main-container {
-    width: 70%;
+    width: 60%;
+    float: none;
+    margin: 10px auto;
+    padding-top: 90px;
 }
 
 .create-course-h2 {
