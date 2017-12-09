@@ -1,7 +1,7 @@
-/*大伙儿都可以把css写在这里*/
+/*大伙儿都可以把后台老师相关的css写在这里*/
 
 .create-class-main-container {
-    width: 60%;
+    width: 55%;
     float: none;
     margin: 10px auto;
     padding-top: 90px;
@@ -30,4 +30,9 @@
 
 .main-content textarea {
     width: 85%;
+}
+
+.button-group {
+    float: right;
+    margin: 8px 2px;
 }
