@@ -1,0 +1,111 @@
+﻿* {
+    margin:0px;
+    padding:0px;
+}
+.clear {
+    clear: both;
+}
+
+body {
+    background-color: #eee;
+}
+a {
+    text-decoration:none;
+ }
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* 顶部导航 */
+.top {
+    width: 100%;
+    line-height: 90px;
+    position: fixed;
+    top: 0;
+    background-color: #f4f7f6;
+    z-index: 1;
+    min-width: 850px;
+}
+
+    .top .brand {
+        float: left;
+        margin-left: 20px;
+    }
+
+.brand img {
+    margin: 0 15px 0 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 180px;
+}
+
+.top .brand a, h1, img {
+    color: #000;
+    float: left;
+}
+
+.navbar {
+    float: right;
+    margin-right: 20px;
+}
+
+    .navbar a {
+        margin: 0 10px;
+        font-size: 24px;
+        color: #aaa;
+        transition: all 0.3s;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: initial;
+        transition-delay: initial;
+    }
+
+        .navbar a:hover {
+            color: #333;
+        }
+
+table {
+    margin: 0 auto;
+    margin-top: 150px;
+    border:2px solid #ccc;
+}
+table tr {
+    height:50px;
+    line-height:50px;
+}
+table tr:nth-child(2n+1) {
+    background-color:#aaced0
+}
+table td {
+    width: 120px;
+    text-align: center;
+    border: 2px solid #ccc;
+}
+.teacher table tr>td:nth-child(4) {
+    width:220px;
+}
+input {
+    width: 90px;
+    height: 30px;
+    border-radius: 6px;
+    font-family: BrandonTextWeb-Medium;
+    color: #4990c6;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.teacher input {
+    margin-left: 1080px;
+}
+.school input{
+    margin-left: 840px;
+}
