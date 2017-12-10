@@ -422,28 +422,26 @@
     Copyright &copy; All Rights Reserved &nbsp;2017
 </footer>
 <script>
-    /*var titleBox = document.getElementsByClassName('title-box');
-    for (var box in titleBox) {
-        titleBox[box].addEventListener('mouseover', function () {
-
-        })
-    }*/
-    var flag = true;
+    (function init() {
+        var allExpDet = document.getElementsByClassName('experiment-detail');
+        for (var exp in allExpDet) {
+            allExpDet[exp].style.display = 'none'
+        }
+    })();
 
     function expandOrCollapse(event) {
         var experiment = document.getElementsByClassName('experiment-detail')[
             parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
                 event.target.id.length))];
+        var flagEx = experiment.style.display === 'none';
         if (experiment !== undefined) {
-            experiment.style.display = flag ? 'block' : 'none';
+            experiment.style.display = flagEx ? 'block' : 'none';
         }
         var img = document.getElementById('img-' + parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
             event.target.id.length)));
         if (img !== null) {
-            img.src = flag ? '../../style/images/up_arrow.svg' : '../../style/images/down_arrow.svg';
+            img.src = flagEx ? '../../style/images/up_arrow.svg' : '../../style/images/down_arrow.svg';
         }
-        if (img !== null && experiment !== undefined)
-            flag = !flag;
     }
 </script>
 </body>

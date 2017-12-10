@@ -63,7 +63,7 @@
                         </span>
                         <!-- 提交作业-->
                     </div>
-                    <div class="experiment-detail">
+                    <div class="homework-detail">
                         <div class="experiment-purpose">
                             <h4>作业内容</h4>
                             <hr>
@@ -85,7 +85,7 @@
                         </span>
                         <!-- 提交作业-->
                     </div>
-                    <div class="experiment-detail">
+                    <div class="homework-detail">
                         <div class="experiment-purpose">
                             <h4>作业内容</h4>
                             <hr>
@@ -107,7 +107,7 @@
                         </span>
                         <!-- 提交作业-->
                     </div>
-                    <div class="experiment-detail">
+                    <div class="homework-detail">
                         <div class="experiment-purpose">
                             <h4>作业内容</h4>
                             <hr>
@@ -129,7 +129,7 @@
                         </span>
                         <!-- 提交作业-->
                     </div>
-                    <div class="experiment-detail">
+                    <div class="homework-detail">
                         <div class="experiment-purpose">
                             <h4>作业内容</h4>
                             <hr>
@@ -151,7 +151,7 @@
                         </span>
                         <!-- 提交作业-->
                     </div>
-                    <div class="experiment-detail">
+                    <div class="homework-detail">
                         <div class="experiment-purpose">
                             <h4>作业内容</h4>
                             <hr>
@@ -173,7 +173,7 @@
                         </span>
                         <!-- 提交作业-->
                     </div>
-                    <div class="experiment-detail">
+                    <div class="homework-detail">
                         <div class="experiment-purpose">
                             <h4>作业内容</h4>
                             <hr>
@@ -191,28 +191,25 @@
     Copyright &copy; All Rights Reserved &nbsp;2017
 </footer>
 <script>
-    /*var titleBox = document.getElementsByClassName('title-box');
-    for (var box in titleBox) {
-        titleBox[box].addEventListener('mouseover', function () {
-
-        })
-    }*/
-    var flag = true;
-
+    (function init() {
+        var allHomework = document.getElementsByClassName('homework-detail');
+        for (var homeworkIndex in allHomework){
+            allHomework[homeworkIndex].style.display = 'none';
+        }
+    })();
     function expandOrCollapse(event) {
-        var experiment = document.getElementsByClassName('experiment-detail')[
+        var homework = document.getElementsByClassName('homework-detail')[
             parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
                 event.target.id.length))];
-        if (experiment !== undefined) {
-            experiment.style.display = flag ? 'block' : 'none';
+        var flagHw = homework.style.display === 'none';
+        if (homework !== undefined) {
+            homework.style.display = flagHw ? 'block' : 'none';
         }
         var img = document.getElementById('img-' + parseInt(event.target.id.substr(event.target.id.lastIndexOf('-') + 1,
             event.target.id.length)));
         if (img !== null) {
-            img.src = flag ? '../../style/images/up_arrow.svg' : '../../style/images/down_arrow.svg';
+            img.src = flagHw ? '../../style/images/up_arrow.svg' : '../../style/images/down_arrow.svg';
         }
-        if (img !== null && experiment !== undefined)
-            flag = !flag;
     }
 </script>
 </body>

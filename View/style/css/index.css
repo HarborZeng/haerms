@@ -41,7 +41,9 @@ body {
     width: 180px;
 }
 
-.top .brand a, h1, img{
+.top .brand a,
+.top .brand h1,
+.top .brand img{
     color: #000;
     float: left;
 }
