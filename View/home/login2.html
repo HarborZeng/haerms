@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学生登录</title>
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../style/css/form.css">
+    </head>
+    <body>
+        <div class="title">
+            系 统 登 录
+        </div>
+        <div class="content">
+            <form class="content-box" action="#" method="post" onsubmit="return check()">
+                <div class="">
+                    <input type="text" name="username" placeholder="用户名" id="username" class="input-text">
+                    <div class="tip" id="tip_1">请输入用户名</div>
+                </div>
+                <div class="">
+                    <input type="password" name="password"  placeholder="密码" autocomplete="off" id="password" class="input-text">
+                    <div class="tip" id="tip_2">请输入密码</div>
+                </div>
+                <div class="">
+                    <div class="logintype">
+                        学生 <input type="radio" name="logintype" id="student" value="1" checked="true">
+                    </div>
+                    <div class="logintype">
+                        老师 <input type="radio" name="logintype" id="teacher" value="2">
+                    </div>
+                    <div class="logintype">
+                        教务 <input type="radio" name="logintype" id="administration" value="3">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="tip" id="tip_3">请选择一个登录类型</div>
+                <div class="">
+                    <button type="submit" class="btn">登录</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function check() {
+                var username = document.getElementById('username').value
+                var password = document.getElementById('password').value
+                var radiolist = document.getElementsByName('logintype')
+                var tip_1 = document.getElementById('tip_1')
+                var tip_2 = document.getElementById('tip_2')
+                var tip_3 = document.getElementById('tip_3')
+                var flag = false
+                if (username == '') {
+                    tip_1.style.visibility = 'visible'
+                    flag = true
+                }
+                else {
+                    tip_1.style.visibility = 'hidden'
+                }
+                if (password == '') {
+                    tip_2.style.visibility = 'visible'
+                    flag = true
+                }
+                else {
+                    tip_2.style.visibility = 'hidden'
+                }
+                console.log(radiolist);
+                if(radiolist[0].checked==false&&radiolist[1].checked==false&&radiolist[2].checked==false) {
+                    tip_3.style.visibility = 'visible'
+                    flag = true
+                }
+                else {
+                    tip_3.style.visibility = 'hidden'
+                }
+                return !flag
+            }
+        </script>
+    </body>
+</html>
