@@ -331,3 +331,13 @@ body {
     border-color: #ccc;
     text-decoration: none
 }
+
+.homework-operation,
+.experiment-operation {
+    padding: 10px;
+}
+
+.homework-operation a,
+.experiment-operation a {
+    color: white;
+}
