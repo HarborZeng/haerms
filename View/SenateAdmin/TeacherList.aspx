@@ -6,7 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
-    <link rel="stylesheet" href="css/TeacherList.css">
+    <link rel="stylesheet" href="style/css/TeacherList.css">
 </head>
 <body>
     <form id="form1" runat="server">
@@ -14,7 +14,7 @@
             <div class="top">
                 <div class="container">
                     <div class="brand">
-                         <img src="./images/logo.png" />
+                         <img src="style/images/logo.png" />
                          <h1>作业与实验报告管理系统</h1>
                     </div>
                     <div class="navbar">
