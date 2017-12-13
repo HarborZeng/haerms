@@ -1,4 +1,4 @@
-﻿* {
+* {
     margin:0px;
     padding:0px;
 }
@@ -11,7 +11,7 @@ body {
 }
 a {
     text-decoration:none;
- }
+}
 .container {
     width: 90%;
     margin: 0 auto;
@@ -28,10 +28,10 @@ a {
     min-width: 850px;
 }
 
-    .top .brand {
-        float: left;
-        margin-left: 20px;
-    }
+.top .brand {
+    float: left;
+    margin-left: 20px;
+}
 
 .brand img {
     margin: 0 15px 0 1px;
@@ -50,37 +50,46 @@ a {
     margin-right: 20px;
 }
 
-    .navbar a {
-        margin: 0 10px;
-        font-size: 24px;
-        color: #aaa;
-        transition: all 0.3s;
-        transition-property: all;
-        transition-duration: 0.3s;
-        transition-timing-function: initial;
-        transition-delay: initial;
-    }
+.navbar a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #aaa;
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
 
-        .navbar a:hover {
-            color: #333;
-        }
-
-table {
+.navbar a:hover {
+    color: #333;
+}
+.teacher,.school {
     margin: 0 auto;
     margin-top: 150px;
+}
+.teacher {
+    width: 990px;
+}
+.school {
+    width: 380px;
+}
+table {
     border:2px solid #ccc;
 }
 table tr {
     height:50px;
     line-height:50px;
+    background-color: white;
 }
-table tr:nth-child(2n+1) {
+table tr:nth-child(1) {
     background-color:#aaced0
 }
 table td {
     width: 120px;
     text-align: center;
     border: 2px solid #ccc;
+    text-align: center;
 }
 .teacher table tr>td:nth-child(4) {
     width:220px;
@@ -102,10 +111,19 @@ input {
     line-height: 1;
     cursor: pointer;
     margin-top: 10px;
+    float: right;
+    margin-left: 5px;
 }
-.teacher input {
-    margin-left: 1080px;
+input.createText {
+    width: 90%;
+    border: none;
+    outline:none;
+    cursor: auto;
+    text-align: center;
+    background-color: white;
+    color: #aaced0;
 }
-.school input{
-    margin-left: 840px;
-}
+.disabled {
+    color: #ccc;
+    pointer-events: none;
+ }
