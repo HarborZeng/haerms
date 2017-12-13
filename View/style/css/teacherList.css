@@ -2,27 +2,26 @@
     margin: 0;
     padding: 0;
 }
+
 a {
     color: #000;
     text-decoration: none;
 }
-li {
-    list-style: none;
-}
-.clear {
-    clear: both;
-}
 
-body {
-    background-color: #ffffff;
-}
+li { list-style: none; }
+
+.clear { clear: both; }
+
+body { background-color: #ffffff; }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     min-width: 700px;
 }
+
 /* 顶部导航 */
+
 .top {
     width: 100%;
     line-height: 90px;
@@ -51,18 +50,17 @@ body {
     transition-delay: initial;
 }
 
-.navbar a:hover {
-    color: #333;
-}
+.navbar a:hover { color: #333; }
 
 /*内容区域*/
-.content {
-    margin-top: 100px;
-}
+
+.content { margin-top: 100px; }
+
 h2 {
     margin-left: 20px;
     font-family: 宋体;
 }
+
 .row {
     margin: 20px 0;
     width: 100%;
@@ -75,32 +73,43 @@ h2 {
     height: 400px;
     box-sizing: border-box;
 }
+
 .headPic {
-    width: 140px;
-    height: 140px;
-    border: 1px solid #777777;
-    border-radius: 91px;
-    margin-left: 112px;
+    position:relative;
+    width:150px;
+    height:150px;
+    overflow:hidden;
+    border-radius:50%;
+    margin-left: 30%;
+}
+
+.headPic img{
+    width:100%;
+    height:auto;
     background: #777777;
 }
+
+
+
 .teacherInfo {
     padding: 5px 20px;
     text-align: center;
     color: #777777;
 }
-.teacherInfo h2 {
-    margin-bottom: 8px;
-}
+
+.teacherInfo h2 { margin-bottom: 8px; }
+
 p {
     margin-bottom: 16px;
     /*margin: 0px 12px 16px 12px;*/
     text-indent: 2em;
 }
+
 .btn {
     margin-top: 5px;
     color: #fff;
     background-color: #868e96;
-    border:1px solid #868e96;
+    border: 1px solid #868e96;
     padding: 6px 12px;
     border-radius: .25rem;
     text-align: center;
@@ -108,7 +117,8 @@ p {
     margin-left: 85px;
     transition: all .15s ease-in-out;
 }
+
 .btn:hover {
     background-color: #777777;
-    border:1px solid #777777;
+    border: 1px solid #777777;
 }
